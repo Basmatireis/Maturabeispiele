@@ -75,7 +75,28 @@ Dieses HTML-Dokument zeigt, wie man den Inhalt eines Absatz-Tags durch Klicken a
     ```
     Der Script-Bereich enthält JavaScript-Code, der die Funktionalität der Seite steuert. Die `changeText`-Funktion ändert den Textinhalt des Absatzes mit der ID "text". Ein Event-Listener wird hinzugefügt, um die `changeText`-Funktion auszuführen, wenn der Button mit der ID "changeButton" geklickt wird.
 
-5. **Schließende Tags**:
+5. **Alternatives Script**:
+   ```html
+       <script>
+        // Funktion zum Ändern des Textinhalts des Paragraphen
+        function changeText() {
+            // Paragraph-Element mit der ID 'text' abrufen
+            const paragraph = document.getElementById("text");
+
+            if (paragraph.textContent === "Das ist ein Beispiel text.") {
+                paragraph.textContent  =  "Dies ist ein neuer Text.";
+            } else {
+                paragraph.textContent = "Das ist ein Beispiel text.";
+            }
+        }
+
+        // Event-Listener für den Button hinzufügen
+        document.getElementById("changeButton").addEventListener("click", changeText);
+    </script>
+    ```
+    In diesem Script-Bereich wird durch erneutes Drücken des buttons der Inhalt des Paragrafen wieder zum Original Geändert.
+
+6. **Schließende Tags**:
     ```html
     </body>
     </html>
