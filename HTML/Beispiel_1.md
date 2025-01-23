@@ -94,7 +94,7 @@ Dieses HTML-Dokument zeigt, wie man den Inhalt eines Absatz-Tags durch Klicken a
         document.getElementById("changeButton").addEventListener("click", changeText);
     </script>
     ```
-    In diesem Script-Bereich wird durch erneutes Drücken des buttons der Inhalt des Paragrafen wieder zum Original Geändert.
+    In diesem Script-Bereich wird durch erneutes Drücken des buttons der Inhalt des Absatzes wieder zum Original Geändert.
 
 6. **Schließende Tags**:
     ```html
