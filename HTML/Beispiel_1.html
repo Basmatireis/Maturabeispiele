@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ändern des Inhalts eines Absatz-Tags</title>
+
+</head>
+<body>
+    <h1>Ändern des Inhalts eines Absatz-Tags</h1>
+    <p id="text">Das ist ein Beispiel text.</p>
+    <button id="changeButton">Button</button>
+
+    <script>
+        // Funktion zum Ändern des Textinhalts des Paragraphen
+        function changeText() {
+            // Paragraph-Element mit der ID 'text' abrufen
+            const paragraph = document.getElementById("text");
+            paragraph.textContent = "Dies ist ein neuer Text.";
+        }
+
+        // Event-Listener für den Button hinzufügen
+        document.getElementById("changeButton").addEventListener("click", changeText);
+    </script>
+</body>
+</html>
