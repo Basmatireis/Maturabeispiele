@@ -1,6 +1,6 @@
 # Project Overview
 
-This repository contains various examples for Matura. Below are the links to all the files in the project:
+Alle Aktuellen Beispiele für die IT-Matura des BrgKepler.
 
 ## Files
 
