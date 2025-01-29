@@ -19,7 +19,7 @@
             DXF-Datein werden am häufigsten verwendet. DXF steht für "Drawing Exchange Format"
 
 
-## Aufgabe 1 Seitenplatte
+## [Aufgabe 1 Seitenplatte](./Aufgabe_1.lcd)
 
 
 Erstelle eine 2D Konstruktion zur Dimensionierung eines Rohres. Die Konstruktionselemente sollen dazu auf drei Layern angeordnet werden.  
@@ -33,4 +33,3 @@ Die Layer sollen (anders als in der Abbildung dargestellt!) unterschiedliche Far
 
 
 ![Aufgabe 1 Sketch](Aufgabe_1_sketch.png)
-- [Aufgabe 1](./Aufgabe_1.lcd)
