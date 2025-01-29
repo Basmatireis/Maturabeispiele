@@ -32,4 +32,16 @@ Die Layer sollen (anders als in der Abbildung dargestellt!) unterschiedliche Far
 - Layer 5: Maßangaben
 
 
-![Aufgabe 1 Sketch](Aufgabe_1_sketch.png)
+![Aufgabe 1 Sketch](pictures/Aufgabe_1_sketch.png)
+
+
+## [Aufgabe 2 Grundplatte](./Aufgabe_2.lcd)
+
+
+Erstelle eine 2D Konstruktion zur Dimensionierung eines Rohres. Die Konstruktionselemente sollen dazu auf drei Layern angeordnet werden. Die Layer sollen (anders als in der Abbildung dargestellt!) unterschiedliche Farben haben. 
+
+- Layer 1: Umriss außen 
+- Layer 2: Ausnehmungen innen 
+- Layer 3: Maßangaben 
+
+
