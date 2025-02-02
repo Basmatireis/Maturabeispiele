@@ -22,7 +22,7 @@ Alle Aktuellen Beispiele für die IT-Matura des BrgKepler.
 - [Aufgabe 1 – Button Klick KepDIG 6. Klasse Aufgabe 8](./HTML5%20JS%20CSS/Thema_07/Aufgabe_1.html)
 
 
-### SP IT 8 Python (BR)
+### [SP IT 8 Python (BR)](./Python)
 #### [Thema 15 - Grundlegende Datenoperationen von Text- und Zahlentypen in Python](./Python/Thema%2015)  
 - [Aufgabe 1 – Iteration und Summierung KepDIG 8. Klasse Aufgabe 7](./Python/Thema%2015/Aufgabe_1.py)  
 - [Aufgabe 2/1 – Stringmanipulationen KepDIG 8. Klasse Aufgabe 8](./Python/Thema%2015/Aufgabe_2_teil_1.py)  
