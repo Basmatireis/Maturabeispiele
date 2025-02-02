@@ -22,3 +22,6 @@ Thema 07 – Ereignisbehandlung und Ändern von HTML-Elementen
 - [Aufgabe 1 – Button Klick KepDIG 6. Klasse Aufgabe 8](./HTML5%20JS%20CSS/Thema_07/Aufgbae_1.md)
 
 
+### SP IT 8 Python (BR)
+Thema 15 - Grundlegende Datenoperationen von Text- und Zahlentypen in Python 
+-[Aufgabe 2 – Stringmanipulationen KepDIG 8. Klasse Aufgabe 8 und 9](./Python/Thema%2015/Aufgabe_2_teil_1.py)
