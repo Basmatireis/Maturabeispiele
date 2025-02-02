@@ -26,6 +26,8 @@ In dieser Schleife wird von `0` bis `9` iteriert. Für jede Iteration wird die S
 
 Dieses Programm zeigt, wie man eine Schleife verwendet, um die Summe der aktuellen und der vorherigen Zahl zu berechnen und auszugeben. Es ist ein einfaches Beispiel für die Verwendung von Schleifen und Variablen in Python.
 
+---
+
 ## Aufgabe 2 Teil 1
 
 In dieser Aufgabe wird ein Python-Programm erstellt, das Zeichen an geraden Indizes einer Zeichenkette druckt.
@@ -68,6 +70,8 @@ In unserem Code verwenden wir `position % 2 == 0`, um zu überprüfen, ob die Po
 ### Zusammenfassung
 
 Dieses Programm zeigt, wie man durch eine Zeichenkette iteriert und nur die Zeichen an geraden Indizes druckt. Es ist ein einfaches Beispiel für die Verwendung von Schleifen und bedingten Anweisungen in Python.
+
+---
 
 ## Aufgabe 2 Teil 2
 
