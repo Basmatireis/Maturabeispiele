@@ -23,7 +23,7 @@ Thema 07 – Ereignisbehandlung und Ändern von HTML-Elementen
 
 
 ### SP IT 8 Python (BR)
-[Thema 15 - Grundlegende Datenoperationen von Text- und Zahlentypen in Python](./Python/Thema%2015)  
+#### [Thema 15 - Grundlegende Datenoperationen von Text- und Zahlentypen in Python](./Python/Thema%2015)  
 - [Aufgabe 1 – Iteration und Summierung KepDIG 8. Klasse Aufgabe 7](./Python/Thema%2015/Aufgabe_1.py)  
 - [Aufgabe 2/1 – Stringmanipulationen KepDIG 8. Klasse Aufgabe 8](./Python/Thema%2015/Aufgabe_2_teil_1.py)  
 - [Aufgabe 2/2– Stringmanipulationen KepDIG 8. Klasse Aufgabe 9](./Python/Thema%2015)  
