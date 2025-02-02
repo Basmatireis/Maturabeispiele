@@ -68,3 +68,28 @@ In unserem Code verwenden wir `position % 2 == 0`, um zu überprüfen, ob die Po
 ### Zusammenfassung
 
 Dieses Programm zeigt, wie man durch eine Zeichenkette iteriert und nur die Zeichen an geraden Indizes druckt. Es ist ein einfaches Beispiel für die Verwendung von Schleifen und bedingten Anweisungen in Python.
+
+## Aufgabe 2 Teil 2
+
+In dieser Aufgabe wird ein Python-Programm erstellt, das eine bestimmte Anzahl von Zeichen von einer Zeichenkette entfernt.
+
+### Code-Erklärung
+
+```python
+# Funktion definieren, um Zeichen zu entfernen
+def removeChars(a, n):
+    # Zeichenkette ab dem n-ten Index zurückgeben
+    x = a[n:]
+    return x
+```
+Hier wird eine Funktion `removeChars` definiert, die zwei Parameter `a` (die Zeichenkette) und `n` (die Anzahl der zu entfernenden Zeichen) akzeptiert. Die Funktion gibt die Zeichenkette ab dem `n`-ten Index zurück.
+
+```python
+# Funktion aufrufen und Ergebnis ausgeben
+print(removeChars("1234567string", 7))
+```
+Diese Zeile ruft die Funktion `removeChars` mit der Zeichenkette `"1234567string"` und `n` gleich `7` auf. Das Ergebnis wird ausgegeben, was `"string"` ist, da die ersten 7 Zeichen entfernt wurden.
+
+### Zusammenfassung
+
+Dieses Programm zeigt, wie man eine Funktion definiert und verwendet, um eine bestimmte Anzahl von Zeichen von einer Zeichenkette zu entfernen. Es ist ein einfaches Beispiel für die Verwendung von Funktionen in Python.
