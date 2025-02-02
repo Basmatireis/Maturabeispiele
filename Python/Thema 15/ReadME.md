@@ -1,3 +1,31 @@
+## Aufgabe 1
+
+In dieser Aufgabe wird ein Python-Programm erstellt, das die Summe der aktuellen und der vorherigen Zahl in einer Schleife berechnet und ausgibt.
+
+### Code-Erklärung
+
+```python
+# Letzte Zahl initialisieren
+last_number = 0
+```
+Hier wird die Variable `last_number` mit dem Wert `0` initialisiert. Diese Variable speichert die vorherige Zahl in der Schleife.
+
+```python
+# Schleife von 0 bis 9
+for current_number in range(10):
+    # Summe der aktuellen und der letzten Zahl berechnen
+    sum = current_number + last_number
+    # Aktuelle Zahl, letzte Zahl und deren Summe ausgeben
+    print("Current Number:", current_number, "Last Number:", last_number, "SUM:", sum)
+    # Die aktuelle Zahl wird zur letzten Zahl für die nächste Iteration
+    last_number = current_number
+```
+In dieser Schleife wird von `0` bis `9` iteriert. Für jede Iteration wird die Summe der aktuellen Zahl (`current_number`) und der letzten Zahl (`last_number`) berechnet und ausgegeben. Danach wird die aktuelle Zahl zur letzten Zahl für die nächste Iteration.
+
+### Zusammenfassung
+
+Dieses Programm zeigt, wie man eine Schleife verwendet, um die Summe der aktuellen und der vorherigen Zahl zu berechnen und auszugeben. Es ist ein einfaches Beispiel für die Verwendung von Schleifen und Variablen in Python.
+
 ## Aufgabe 2 Teil 1
 
 In dieser Aufgabe wird ein Python-Programm erstellt, das Zeichen an geraden Indizes einer Zeichenkette druckt.
