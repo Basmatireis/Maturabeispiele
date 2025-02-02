@@ -29,12 +29,28 @@ Python hat eine große und aktive Gemeinschaft, was bedeutet, dass viele Ressour
 Python unterstützt verschiedene Arten von Schleifen, um wiederholte Aufgaben auszuführen.
 
 ### For-Schleife
-Die `for`-Schleife wird verwendet, um über eine Sequenz (wie eine Liste, ein Tupel oder eine Zeichenkette) zu iterieren.
+Die `for`-Schleife wird verwendet, um über eine Sequenz (wie eine Liste, ein Tupel oder eine Zeichenkette) zu iterieren. Bei jeder Iteration wird das nächste Element der Sequenz der Schleifenvariablen zugewiesen und der Schleifenblock wird ausgeführt.
+
 ```python
 fruits = ["Apfel", "Banane", "Kirsche"]
 for fruit in fruits:
     print(fruit)
 ```
+In diesem Beispiel wird die Liste `fruits` durchlaufen. Bei jeder Iteration wird das aktuelle Element der Liste der Variablen `fruit` zugewiesen und dann ausgegeben.
+
+Die `for`-Schleife kann auch mit der `range()`-Funktion verwendet werden, um eine Sequenz von Zahlen zu durchlaufen:
+```python
+for i in range(5):
+    print(i)  # Ausgabe: 0, 1, 2, 3, 4
+```
+Hier erzeugt `range(5)` eine Sequenz von Zahlen von 0 bis 4, und die Schleife gibt jede dieser Zahlen aus.
+
+Die `for`-Schleife kann auch verwendet werden, um über Zeichenketten zu iterieren:
+```python
+for char in "Python":
+    print(char)
+```
+In diesem Fall wird jedes Zeichen der Zeichenkette "Python" nacheinander der Variablen `char` zugewiesen und ausgegeben.
 
 ### While-Schleife
 Die `while`-Schleife wird verwendet, um eine Anweisung so lange auszuführen, wie eine Bedingung wahr ist.
