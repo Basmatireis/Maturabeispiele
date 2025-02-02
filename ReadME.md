@@ -27,3 +27,5 @@ Alle Aktuellen Beispiele für die IT-Matura des BrgKepler.
 - [Aufgabe 1 – Iteration und Summierung KepDIG 8. Klasse Aufgabe 7](./Python/Thema%2015/Aufgabe_1.py)  
 - [Aufgabe 2/1 – Stringmanipulationen KepDIG 8. Klasse Aufgabe 8](./Python/Thema%2015/Aufgabe_2_teil_1.py)  
 - [Aufgabe 2/2– Stringmanipulationen KepDIG 8. Klasse Aufgabe 9](./Python/Thema%2015)  
+
+#### [Thema 16 - Erstellen von Python-Skripts für mathematische Berechnungen](./Python/Thema%2016)

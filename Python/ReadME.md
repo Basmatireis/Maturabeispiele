@@ -14,7 +14,6 @@ Python ist eine hochentwickelte, interpretierte Programmiersprache, die für ihr
 - **Pandas**: Für Datenmanipulation und -analyse.
 - **Matplotlib**: Für Datenvisualisierung.
 - **Django**: Ein hochentwickeltes Web-Framework zum Erstellen robuster Webanwendungen.
-- **Flask**: Ein Mikro-Web-Framework für kleine bis mittelgroße Anwendungen.
 
 ## Anwendungsfälle
 - **Webentwicklung**: Mit Frameworks wie Django und Flask.
@@ -92,6 +91,7 @@ Ganzzahlen sind ganze Zahlen ohne Dezimalpunkt.
 ```python
 x = 5
 print(type(x))  # Ausgabe: <class 'int'>
+print(x)  # Ausgabe: 5
 ```
 
 ### Gleitkommazahlen (float)
@@ -99,6 +99,7 @@ Gleitkommazahlen sind Zahlen mit Dezimalpunkt.
 ```python
 y = 5.5
 print(type(y))  # Ausgabe: <class 'float'>
+print(y)  # Ausgabe: 5.5
 ```
 
 ### Zeichenketten (str)
@@ -106,6 +107,7 @@ Zeichenketten sind Textdaten, die in Anführungszeichen eingeschlossen sind.
 ```python
 name = "Alice"
 print(type(name))  # Ausgabe: <class 'str'>
+print(name)  # Ausgabe: Alice
 ```
 
 ### Listen (list)
@@ -113,6 +115,7 @@ Listen sind geordnete Sammlungen von Elementen, die veränderbar sind.
 ```python
 my_list = [1, 2, 3]
 print(type(my_list))  # Ausgabe: <class 'list'>
+print(my_list)  # Ausgabe: [1, 2, 3]
 ```
 
 ### Tupel (tuple)
@@ -120,6 +123,7 @@ Tupel sind geordnete Sammlungen von Elementen, die unveränderlich sind.
 ```python
 my_tuple = (1, 2, 3)
 print(type(my_tuple))  # Ausgabe: <class 'tuple'>
+print(my_tuple)  # Ausgabe: (1, 2, 3)
 ```
 
 ### Wörterbücher (dict)
@@ -127,6 +131,7 @@ Wörterbücher sind Sammlungen von Schlüssel-Wert-Paaren.
 ```python
 my_dict = {"name": "Alice", "age": 25}
 print(type(my_dict))  # Ausgabe: <class 'dict'>
+print(my_dict)  # Ausgabe: {'name': 'Alice', 'age': 25}
 ```
 
 ## Fazit
