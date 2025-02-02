@@ -32,6 +32,8 @@ for income in [45000]:
     - Wenn das Einkommen über `20_000` liegt, wird die Steuer für den Betrag über `20_000` mit `20%` berechnet, zusätzlich zu den `10%` für die ersten `10_000`.
 3. **Ergebnis drucken**: Das berechnete Steuerergebnis wird in einem formatierten String ausgegeben.
 
+---
+
 # Aufgabe 2
 
 In dieser Aufgabe erstellen wir ein Multiplikationstabelle. Der Code durchläuft zwei Schleifen, um die Produkte der Zahlen von 1 bis 10 zu berechnen und anzuzeigen.
