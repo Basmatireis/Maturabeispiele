@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Anzeige des aktuellen Wochentages mit switch</title>
+</head>
+<body>
+    <h1>Anzeige des aktuellen Wochentages mit switch</h1>
+
+    <?php
+    // Hole den aktuellen Wochentag als Zahl (0 = Sonntag, 1 = Montag, ..., 6 = Samstag)
+    $wochentagNummer = date('w'); 
+
+    // Variable für den Wochentag-String
+    $wochentag = "";
+
+    // Switch-Anweisung, die den Wochentag basierend auf der Zahl zuweist
+    switch ($wochentagNummer) {
+        case 0:
+            $wochentag = "Sonntag";
+            break;
+        case 1:
+            $wochentag = "Montag";
+            break;
+        case 2:
+            $wochentag = "Dienstag";
+            break;
+        case 3:
+            $wochentag = "Mittwoch";
+            break;
+        case 4:
+            $wochentag = "Donnerstag";
+            break;
+        case 5:
+            $wochentag = "Freitag";
+            break;
+        case 6:
+            $wochentag = "Samstag";
+            break;
+    }
+
+    // Ausgabe des aktuellen Wochentages
+    echo "<p>Heute ist " . $wochentag . "!</p>";
+    ?>
+
+</body>
+</html>

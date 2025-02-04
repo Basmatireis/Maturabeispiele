@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Anzeige des aktuellen Wochentages</title>
+</head>
+<body>
+    <h1>Anzeige des aktuellen Wochentages</h1>
+
+    <?php
+    // Ermitteln des aktuellen Wochentages als Integer (0 = Sonntag, 1 = Montag, ..., 6 = Samstag)
+    $day_of_week = date('w'); 
+
+    // Variable für den Namen des Wochentages
+    $wochentag = "";
+
+    // If-Abfragen für die Zuweisung des Wochentages
+    if ($day_of_week == 0) {
+        $wochentag = "Sonntag";
+    } elseif ($day_of_week == 1) {
+        $wochentag = "Montag";
+    } elseif ($day_of_week == 2) {
+        $wochentag = "Dienstag";
+    } elseif ($day_of_week == 3) {
+        $wochentag = "Mittwoch";
+    } elseif ($day_of_week == 4) {
+        $wochentag = "Donnerstag";
+    } elseif ($day_of_week == 5) {
+        $wochentag = "Freitag";
+    } elseif ($day_of_week == 6) {
+        $wochentag = "Samstag";
+    }
+
+    // Ausgabe des aktuellen Wochentages
+    echo "<p>Heute ist " . $wochentag . "!</p>";
+    ?>
+
+</body>
+</html>

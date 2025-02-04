@@ -1,0 +1,52 @@
+<?php
+$host = 'localhost';  // Dein MySQL-Host, normalerweise localhost
+$dbname = 'testdb';   // Deine MySQL-Datenbank
+$username = 'root';   // Dein MySQL-Benutzername
+$password = '';       // Dein MySQL-Passwort
+
+// PDO-Verbindung herstellen
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    // Setze den PDO Fehlermodus auf Exception
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Verbindung erfolgreich!<br>";
+} catch (PDOException $e) {
+    echo "Verbindung fehlgeschlagen: " . $e->getMessage();
+    die();
+}
+
+// Funktion zum Hinzufügen eines Datensatzes
+function insertUser($name, $email) {
+    global $pdo;
+
+    // SQL-Abfrage vorbereiten
+    $sql = "INSERT INTO users (name, email) VALUES (:name, :email)";
+    
+    // Vorbereitete Anweisung
+    $stmt = $pdo->prepare($sql);
+    
+    // Parameter binden
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':email', $email);
+    
+    // Ausführen der Anweisung
+    try {
+        $stmt->execute();
+        echo "Datensatz erfolgreich hinzugefügt!<br>";
+    } catch (PDOException $e) {
+        echo "Fehler beim Hinzufügen des Datensatzes: " . $e->getMessage();
+    }
+}
+
+// Füge mehrere Datensätze hinzu
+insertUser('Max Mustermann', 'max@example.com');
+insertUser('Maria Müller', 'maria@example.com');
+insertUser('John Doe', 'john@example.com');
+
+// Optionale Ausgabe, um alle Datensätze aus der Tabelle anzuzeigen
+echo "<h2>Alle Benutzer:</h2>";
+$query = $pdo->query("SELECT * FROM users");
+while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
+    echo "ID: " . $row['id'] . " - Name: " . $row['name'] . " - Email: " . $row['email'] . "<br>";
+}
+?>

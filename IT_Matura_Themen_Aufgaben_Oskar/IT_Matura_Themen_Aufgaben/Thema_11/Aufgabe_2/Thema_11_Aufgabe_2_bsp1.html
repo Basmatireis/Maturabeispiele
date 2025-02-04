@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Anzeige von Zahlen mit Schleifen</title>
+</head>
+<body>
+    <h1>Anzeige von Zahlen mit Schleifen</h1>
+
+    <h2>Mit der while-Schleife:</h2>
+    <?php
+    $zahl = 20;
+    while ($zahl <= 50) {
+        echo $zahl . "<br>";
+        $zahl++;
+    }
+    ?>
+
+    <h2>Mit der do-while-Schleife:</h2>
+    <?php
+    $zahl = 20;
+    do {
+        echo $zahl . "<br>";
+        $zahl++;
+    } while ($zahl <= 50);
+    ?>
+
+    <h2>Mit der for-Schleife:</h2>
+    <?php
+    for ($zahl = 20; $zahl <= 50; $zahl++) {
+        echo $zahl . "<br>";
+    }
+    ?>
+</body>
+</html>

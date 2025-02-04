@@ -1,0 +1,48 @@
+<?php
+$host = 'localhost';  // Dein MySQL-Host, normalerweise localhost
+$dbname = 'testdb';   // Deine MySQL-Datenbank
+$username = 'root';   // Dein MySQL-Benutzername
+$password = '';       // Dein MySQL-Passwort
+
+// PDO-Verbindung herstellen
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    // Setze den PDO Fehlermodus auf Exception
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Verbindung erfolgreich!<br>";
+} catch (PDOException $e) {
+    echo "Verbindung fehlgeschlagen: " . $e->getMessage();
+    die();
+}
+
+// Abfrage, um alle Datensätze aus der Tabelle TabelleAdressen abzurufen
+$sql = "SELECT * FROM TabelleAdressen";
+
+try {
+    // Bereite die SQL-Anweisung vor und führe sie aus
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    
+    // Überprüfe, ob es Datensätze gibt
+    if ($stmt->rowCount() > 0) {
+        echo "<h2>Alle Adressen:</h2>";
+        echo "<table border='1'><tr><th>ID</th><th>Name</th><th>Adresse</th><th>Telefon</th></tr>";
+        
+        // Alle Datensätze durchlaufen und anzeigen
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            echo "<tr>";
+            echo "<td>" . $row['id'] . "</td>";
+            echo "<td>" . $row['name'] . "</td>";
+            echo "<td>" . $row['adresse'] . "</td>";
+            echo "<td>" . $row['telefon'] . "</td>";
+            echo "</tr>";
+        }
+        
+        echo "</table>";
+    } else {
+        echo "Keine Adressen gefunden.";
+    }
+} catch (PDOException $e) {
+    echo "Fehler beim Abrufen der Datensätze: " . $e->getMessage();
+}
+?>
